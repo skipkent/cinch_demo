@@ -1,3 +1,3 @@
 *** Simple demo for Cinch
 
-That's all!
+Just a simple demo with Page Object running with ChromeDriver.
