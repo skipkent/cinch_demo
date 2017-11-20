@@ -39,6 +39,7 @@ public class LoginTest {
 		home.loginAs("username@email.com", "password!");
 		wait = new WebDriverWait(driver, 5);
 		// TODO: refactor this css into page object
+		// TODO: refactor wait and other primal methods into BasePage object
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("[data-page='app.dashboard.index']")));
 		String actualText = driver.findElement(By.cssSelector(".cf-Box-Content")).getText();
 		String expectedText = "The more you contribute to a rainy day fund the bigger the storm you can weather.";
